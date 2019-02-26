@@ -1,0 +1,87 @@
+// Header styles
+a:hover {
+  color: #036;
+}
+
+.int-header {
+  text-align: center;
+  max-width: 825px;
+}
+
+.int-header h1 {
+  padding-top: 0.3em;
+  line-height: 1.1em;
+}
+
+.int-header h5,
+.int-header h5 span {
+  text-transform: uppercase;
+  font-size: .9em;
+  letter-spacing: .08em;
+  padding-top: 40px;
+}
+
+.int-header h5 span {
+  font-size: .96em;
+  letter-spacing: .1em;
+}
+
+.int-header h5 span,
+.int-header .byline {
+  font-weight: bold;
+}
+
+.int-header .byline span {
+  font-weight: normal;
+}
+
+.int-main {
+  max-width: 1200px;
+  font-family: 'Benton Sans';
+}
+
+section {
+  margin-left:auto;
+  margin-right:auto;
+  max-width:525px; 
+  margin-bottom:40px;
+
+  p {
+    font-family:"Poynter Serif RE",Georgia,Times,serif;
+    letter-spacing:"-0.3px";
+    font-size:15px;
+    line-height:140%;
+  }
+
+  h2 {
+    font-size: 1.4em;
+    text-align: center;
+    font-family: 'Benton Sans';
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  &.map {
+    max-width:100%;
+
+    #map {
+      width:100%;
+      height:600px;
+    }
+  }
+
+}
+
+#map {
+    
+}
+
+footer {
+  margin-bottom: 70px;
+}
+
+footer p {
+  font-family: 'Benton Sans';
+  font-size: .8em;
+  margin-bottom: 10px;
+}
