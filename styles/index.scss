@@ -25,5 +25,7 @@ $selector-wrapper: '.strib-styles.ssa.ssb.ssc';
 #{$selector-wrapper} {
   // Split your styles into multiple files so its easier to understand and change
   @import 'project';
+  @import 'mapboxgl';
+
 }
 

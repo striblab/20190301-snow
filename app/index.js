@@ -27,12 +27,19 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiY2pkZDNiIiwiYSI6ImNqZWJtZWVsYjBoYTAycm1raTltd
 const map = new mapboxgl.Map({
   container: 'map',
   style: 'mapbox://styles/cjdd3b/cjseugkrg0fvf1fqiox8ab1vk',
-  center: [-97.598988, 38.167854],
-  zoom: 3.98,
-  pitch: 60 // pitch in degrees
+  center: [-97.508988, 35.167854],
+  zoom: 4.07,
+  pitch: 45, // pitch in degrees
+  maxZoom: 8,
+  maxBounds: [-124.848974, 24.396308, -66.885444, 49.384358],
+  scrollZoom: false
 });
 
 /********** MAP BEHAVIORS **********/
+map.addControl(new mapboxgl.NavigationControl({ showCompass: false }));
 
-map.on('load', function() {
-});
+if (utils.isMobile()) {
+  map.dragRotate.disable();
+  map.touchZoomRotate.disableRotation();
+} else {
+}
