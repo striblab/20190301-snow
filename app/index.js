@@ -27,7 +27,7 @@ const map = new mapboxgl.Map({
   container: 'map',
   style: 'mapbox://styles/cjdd3b/cjseugkrg0fvf1fqiox8ab1vk',
   center: [-97.508988, 35.167854],
-  pitch: 45, // pitch in degrees
+  pitch: 35, // pitch in degrees
   maxZoom: 6,
   maxBounds: [-124.848974, 24.396308, -66.885444, 49.384358],
   scrollZoom: false
