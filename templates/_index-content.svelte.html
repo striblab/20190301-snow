@@ -7,6 +7,8 @@
   <div class="container-lg int-main">
   
     <section class="mapcontainer">
+      <div id="map" class="map"></div>
+      <div id="map-credit">Source: <a href="https://www.nohrsc.noaa.gov/snowfall/">National Snowfall Analysis</a> from the National Weather Service</div>
       <div id="map-legend">
         <div class="legend-header">
           <div class="header">February 2019 snowfall accumulation</div>
@@ -23,7 +25,7 @@
 
         <div class="legend-footer">
           <div class="footer-left">
-            <div class="label">↕<br />Total accumulation</div>
+            <div class="label">↕<br />Total (0 to 358 inches)</div>
           </div>
           <div class="footer-right">
             <div class="label">
@@ -33,8 +35,6 @@
           </div>
         </div>
       </div>
-      <div id="map" class="map"></div>
-      <div id="map-credit">Source: <a href="https://www.nohrsc.noaa.gov/snowfall/">National Snowfall Analysis</a> from the National Weather Service</div>
     </section>
 
     <section class="leadin">
@@ -44,24 +44,24 @@
         
         <p>Literally.</p>
         
-        <p>Our snowfall totals had more in common with Jackson, Wyo., (41 inches) than our fellow Midwesterners in Chicago (9 inches), Milwaukee (18 inches) and Detroit (5.5 inches). Our 37 inches put us level with the summit of New Hampshire's Mt. Washington — elevation 6,288 feet — a place that proudly claims to be home to the worst weather in America.</p>
+        <p>Our snowfall totals had more in common with Jackson, Wyo., (41 inches) than our fellow Midwesterners in Chicago (9 inches), Milwaukee (18 inches) and Detroit (5.5 inches). Our 37 inches put us level with the summit of New Hampshire's Mt. Washington — elevation 6,288 feet — a place that proudly claims to be home to the <a href="https://www.mountwashington.org/experience-the-weather/observer-comments.aspx?id=38543">worst weather in America</a>.</p>
           
-        <p>In fact, with the exception of Wisconsin and Michigan's Upper Peninsula, the Twin Cities endured more snow this February than nearly everywhere outside the Mountain West, according to national snowfall estimates.</p>
+        <p>In fact, with the exception of Wisconsin and Michigan's Upper Peninsula, the Twin Cities suffered more snow this February than nearly everywhere outside the Mountain West, according to national snowfall estimates.</p>
 
         <p>This, to put it lightly, is unusual.</p>
 
-        <p>Despite our reputation for brutal winters, the Twin Cities averages about 10 inches of snow in February — comparable to much of New England, the upper Midwest, and swaths of the northern plains. This year we put them all to shame.</p>
+        <p>Despite our reputation for relentless winters, the Twin Cities averages about 10 inches of snow in February — comparable to New England, the upper Midwest, and swaths of the northern plains. This year we put them all to shame.</p>
 
-        <p>The maps below show how our snowfall compares to other regions, both this year and over an average of the previous five. Red areas got at least as much snow as the Twin Cities. Blue areas got less.</p>
+        <p>The maps below compare how our February snow compares to other regions, both this year and in a more typical year, measured as the median snow accumulation of five recent Februaries from 2014 to 2018. Red areas had at least as much snow as the Twin Cities. Blue areas had less.</p>
 
-        <p>And if misery loves company, the maps also show how lonely our February truly was.</p>
+        <p>If misery loves company, the maps also show how lonely our February truly was.</p>
     </section>
 
     <section class="highlights">
       <h2>New York and New England</h2>
       <div class="image-container">
         <div class="left">
-          <div class="year-label">Average</div>
+          <div class="year-label">2014-2018</div>
           <img src="https://api.mapbox.com/styles/v1/cjdd3b/cjsn63jav5qsh1fmvuegldopo/static/-72.4288,43.7331,4.8,0,50/400x300@2x?access_token=pk.eyJ1IjoiY2pkZDNiIiwiYSI6ImNqZWJtZWVsYjBoYTAycm1raTltdnpvOWgifQ.aPWEg8C-5IJ0_7cXusY-1g">
         </div>
         <div class="right">
@@ -70,15 +70,19 @@
           </div>
       </div>
       <p>New England is no stranger to snowy winters. Apart from being home to several major mountain ranges, the region is often battered by ferocious nor'easters that churn up the coast and dump snow by the foot in areas like Boston and New York.</p>
-      <p>A particularly brutal series of storms in 2015 dropped nearly six feet on Boston in Feburary alone, on the way to a record-setting season of 108 inches — a total the Twin Cities has never matched.</p>
-      <p>This year, Boston got 8 inches. Portland, Maine, managed nearly 11. And up north, Burlington, Vt., tallied 16.</p>
+
+      <p>A particularly merciless series of storms in 2015 dropped nearly six feet on Boston in Feburary alone, on the way to a record-setting season of 108 inches — a total the Twin Cities has never matched.</p>
+
+      <p>To be fair, a good February in places like New York and Connecticut might see only an inch or two, and several <a href="https://en.wikipedia.org/wiki/Mid-February_2014_North_American_winter_storm">historic</a> <a href="https://en.wikipedia.org/wiki/Mid-February_2015_North_American_blizzard">storms</a> have led to some outsized totals there in recent years.</p>
+
+      <p>But this year, Boston got 8 inches. Portland, Maine, managed nearly 11. And up north, Burlington, Vt., tallied just 16.</p>
     </section>
 
     <section class="highlights">
         <h2>The upper midwest: Chicago, Detroit and Milwaukee</h2>
         <div class="image-container">
           <div class="left">
-            <div class="year-label">Average</div>
+            <div class="year-label">2014-2018</div>
             <img src="https://api.mapbox.com/styles/v1/cjdd3b/cjsn63jav5qsh1fmvuegldopo/static/-84.9565,42.1879,4.8,0,50/400x300@2x?access_token=pk.eyJ1IjoiY2pkZDNiIiwiYSI6ImNqZWJtZWVsYjBoYTAycm1raTltdnpvOWgifQ.aPWEg8C-5IJ0_7cXusY-1g">
           </div>
           <div class="right">
@@ -86,31 +90,41 @@
               <img src="https://api.mapbox.com/styles/v1/cjdd3b/cjseugkrg0fvf1fqiox8ab1vk/static/-84.9565,42.1879,4.8,0,50/400x300@2x?access_token=pk.eyJ1IjoiY2pkZDNiIiwiYSI6ImNqZWJtZWVsYjBoYTAycm1raTltdnpvOWgifQ.aPWEg8C-5IJ0_7cXusY-1g">
             </div>
         </div>
-        <p>In most winters, we can usually count on our Midwestern compatriots in Milwaukee, Chicago and Detroit to share our pain.</p>
-        <p>Each averages a similar amount of February snowfall, made worse at times by frigid winds ripping off the Great Lakes.</p>
+        <p>In a normal winter, we can usually count on our compatriots in Milwaukee, Chicago and Detroit to share our pain.</p>
+
+        <p>Their typical February looks a lot like ours, with snowfall totals around a foot, give or take, made worse at times by frigid winds ripping off the Great Lakes.</p>
+
+        <p>This year was no different. All three cities saw snowfall in line with their historical averages — though other areas of Michigan and Wisconsin had it even worse than we did:</p>
+
+        <p>Less than two hours to our east, Eau Claire, Wisc., <a href="https://blogs.mprnews.org/updraft/2019/02/february-siege-bitter-cold-and-record-snowfall/">topped 40 inches</a>.</p>
       </section>
 
       <section class="highlights">
-          <h2>The Front Range and northern plains</h2>
+          <h2>The North Shore</h2>
           <div class="image-container">
             <div class="left">
-              <div class="year-label">Average</div>
-              <img src="https://api.mapbox.com/styles/v1/cjdd3b/cjsn63jav5qsh1fmvuegldopo/static/-104.7355,40.6157,4.8,0,50/400x300@2x?access_token=pk.eyJ1IjoiY2pkZDNiIiwiYSI6ImNqZWJtZWVsYjBoYTAycm1raTltdnpvOWgifQ.aPWEg8C-5IJ0_7cXusY-1g">
+              <div class="year-label">2014-2018</div>
+              <img src="https://api.mapbox.com/styles/v1/cjdd3b/cjsn63jav5qsh1fmvuegldopo/static/-91.8248,47.4789,6,0,50/400x300@2x?access_token=pk.eyJ1IjoiY2pkZDNiIiwiYSI6ImNqZWJtZWVsYjBoYTAycm1raTltdnpvOWgifQ.aPWEg8C-5IJ0_7cXusY-1g">
             </div>
             <div class="right">
                 <div class="year-label">2019</div>
-                <img src="https://api.mapbox.com/styles/v1/cjdd3b/cjseugkrg0fvf1fqiox8ab1vk/static/-104.7355,40.6157,4.8,0,50/400x300@2x?access_token=pk.eyJ1IjoiY2pkZDNiIiwiYSI6ImNqZWJtZWVsYjBoYTAycm1raTltdnpvOWgifQ.aPWEg8C-5IJ0_7cXusY-1g">
+                <img src="https://api.mapbox.com/styles/v1/cjdd3b/cjseugkrg0fvf1fqiox8ab1vk/static/-91.8248,47.4789,6,0,50/400x300@2x?access_token=pk.eyJ1IjoiY2pkZDNiIiwiYSI6ImNqZWJtZWVsYjBoYTAycm1raTltdnpvOWgifQ.aPWEg8C-5IJ0_7cXusY-1g">
               </div>
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Surely the rugged North Shore must have had more snow last month than the Twin Cities, way down south.</p>
+
+          <p>What with the storms roiling over Lake Superior, the cold and wild Boundary Waters, and and the Sawtooth Mountains, home to just about the only real elevation Minnesota has to offer.</p>
+
+          <p>And in a normal year, that would be true. But this was not a normal year.</p>
+
+          <p>Some areas near Duluth matched us flake-for-flake, as did some spots near Tofte and by the Canadian border. But mostly the Arrowhead was found wanting.</p>
       </section>
 
       <section class="highlights">
           <h2>The Mountain West</h2>
           <div class="image-container">
             <div class="left">
-              <div class="year-label">Average</div>
+              <div class="year-label">2014-2018</div>
               <img src="https://api.mapbox.com/styles/v1/cjdd3b/cjsn63jav5qsh1fmvuegldopo/static/-119.394,40.360,4.2,0,50/400x300@2x?access_token=pk.eyJ1IjoiY2pkZDNiIiwiYSI6ImNqZWJtZWVsYjBoYTAycm1raTltdnpvOWgifQ.aPWEg8C-5IJ0_7cXusY-1g">
             </div>
             <div class="right">
@@ -118,9 +132,14 @@
                 <img src="https://api.mapbox.com/styles/v1/cjdd3b/cjseugkrg0fvf1fqiox8ab1vk/static/-119.394,40.360,4.2,0,50/400x300@2x?access_token=pk.eyJ1IjoiY2pkZDNiIiwiYSI6ImNqZWJtZWVsYjBoYTAycm1raTltdnpvOWgifQ.aPWEg8C-5IJ0_7cXusY-1g">
               </div>
           </div>
-          <p>It could be worse.</p>
-          <p>Areas of the Sierra Nevada, in California, have already been socked with more than 300 inches of snow in February.</p>
-          <p>That's good news for Los Angeles, which counts on snowmelt from the Sierra for its water supply, but it has also shut down highways, triggered enormous avalanches, and created <a href="https://twitter.com/Sierra_at_Tahoe/status/1100138814675120133/photo/1">memeworthy snowdrifts the size of small buildings.</a></p>
+          <p>It could always be worse.</p>
+          <p>Some areas of the Sierra Nevada mountains, in California, got socked with more than 350 inches of snow in February.</p>
+
+          <p>That's good news for Los Angeles, which counts on snowmelt from the Sierra to supply much of its ater, but it has also shut down highways, triggered enormous avalanches, and created <a href="https://twitter.com/Sierra_at_Tahoe/status/1100138814675120133/photo/1">memeworthy snowdrifts the size of small buildings.</a></p>
+
+          <p>Snowfall records fell all over the west this February, from Seattle to Spokane, Wash., to Missoula, Mont. Even Los Angeles <a href="https://www.usatoday.com/story/news/nation/2019/02/21/los-angeles-snow-snow-falls-hollywood-pasadena-malibu/2943525002/">got a taste</a>.</p>
+          
+          <p>But the fact remains: Unless you live on a mountain, you probably had less snow than the Twin Cities last month.</p>
       </section>
 
     <section class="credits">
