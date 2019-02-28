@@ -10,25 +10,26 @@ a:hover {
 .int-header {
   text-align: center;
   max-width: 825px;
-  margin-top:40px;
+  padding-top: 40px;
+  margin-bottom: 40px;
 }
 
 .int-header h1 {
-  padding-top: 0.3em;
+  padding-top: 0.5em;
   line-height: 1.1em;
 }
 
 .int-header h5,
 .int-header h5 span {
   text-transform: uppercase;
-  font-size: .9em;
-  letter-spacing: .08em;
+  font-size: 0.9em;
+  letter-spacing: 0.08em;
   padding-top: 40px;
 }
 
 .int-header h5 span {
-  font-size: .96em;
-  letter-spacing: .1em;
+  font-size: 0.96em;
+  letter-spacing: 0.1em;
 }
 
 .int-header h5 span,
@@ -42,109 +43,111 @@ a:hover {
 
 .int-main {
   max-width: 1200px;
-  font-family: 'Benton Sans';
+  font-family: "Benton Sans";
 }
 
 section {
-  margin-left:auto;
-  margin-right:auto;
-  max-width:525px; 
-  margin-bottom:40px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 525px;
+  margin-bottom: 40px;
 
   p {
-    font-family:"Poynter Serif RE",Georgia,Times,serif;
-    letter-spacing:"-0.3px";
-    font-size:15px;
-    line-height:140%;
+    font-family: "Poynter Serif RE", Georgia, Times, serif;
+    letter-spacing: "-0.3px";
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  div.area-chart {
+    margin-bottom: 15px;
   }
 
   h2 {
     font-size: 1.2em;
     text-align: center;
-    font-family: 'Benton Sans';
+    font-family: "Benton Sans";
     font-weight: bold;
     margin-bottom: 20px;
   }
 
   &.mapcontainer {
-    margin-top:20px;
-    margin-bottom:40px;
-    max-width:1200px;
-    width:100%;
-    display:inline-block;
-    position:relative;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    max-width: 1200px;
+    width: 100%;
+    display: inline-block;
+    position: relative;
 
     .map {
-      height:500px;
-      position:relative;
+      height: 500px;
+      position: relative;
     }
 
     #map-credit {
       font-family: "Benton Sans";
       font-size: 0.7em;
       color: #808080;
-      margin-top:5px;
+      margin-top: 5px;
     }
-
   }
 
   &.highlights {
-    max-width:800px;
+    padding-top: 2.5em;
+    max-width: 800px;
 
     p {
-      margin-left:auto;
-      margin-right:auto;
-      max-width:525px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 525px;
     }
 
     .image-container {
-      text-align:center;
-      margin-bottom:20px;
-      width:100%;
-      margin-left:auto;
-      margin-right:auto;
-      clear:both;
-      display:inline-block;
-    
-    
+      text-align: center;
+      margin-bottom: 20px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      clear: both;
+      display: inline-block;
+
       .left {
-        float:left;
-        width:48%;
-        position:relative;
-    
+        float: left;
+        width: 48%;
+        position: relative;
+
         .year-label {
-          position:absolute;
-          top:5px;
-          left:10px;
-          z-index:1000;
-          color:white;
-          font-size:2.5vw;
+          position: absolute;
+          top: 5px;
+          left: 10px;
+          z-index: 1000;
+          color: white;
+          font-size: 2.5vw;
           -webkit-text-fill-color: white; /* Will override color (regardless of order) */
           -webkit-text-stroke-width: 1px;
           -webkit-text-stroke-color: black;
-          text-align:center;
-          font-weight:bold;
+          text-align: center;
+          font-weight: bold;
         }
-    
       }
-    
+
       .right {
-        position:relative;
-        float:right;
-        width:48%;
-    
+        position: relative;
+        float: right;
+        width: 48%;
+
         .year-label {
-          position:absolute;
-          top:5px;
-          left:10px;
-          color:white;
-          font-size:2.5vw;
+          position: absolute;
+          top: 5px;
+          left: 10px;
+          color: white;
+          font-size: 2.5vw;
           -webkit-text-fill-color: white; /* Will override color (regardless of order) */
           -webkit-text-stroke-width: 1px;
           -webkit-text-stroke-color: black;
-          z-index:1000;
-          text-align:center;
-          font-weight:bold;
+          z-index: 1000;
+          text-align: center;
+          font-weight: bold;
         }
       }
     }
@@ -156,20 +159,20 @@ section {
   z-index: 1;
   border-radius: 3px;
   max-width: 500px;
-  font-family: 'Open Sans', sans-serif;
-  margin-left:auto;
-  margin-right:auto;
-  display:block;
+  font-family: "Open Sans", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
-  
+
 #menu a {
   font-size: 13px;
   color: #404040;
   display: block;
   margin: 0;
-  border: 1px solid rgba(0,0,0,0.4);
-  min-width:200px;
-  float:left;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  min-width: 200px;
+  float: left;
   padding: 0;
   padding: 10px;
   text-decoration: none;
@@ -177,19 +180,19 @@ section {
 }
 
 #menu a:last-child {
-  margin-left:15px;
+  margin-left: 15px;
 }
-  
+
 #menu a:hover {
   background-color: #f8f8f8;
   color: #404040;
 }
-  
+
 #menu a.active {
   background-color: #3887be;
   color: #ffffff;
 }
-  
+
 #menu a.active:hover {
   background: #3074a4;
 }
@@ -199,98 +202,100 @@ footer {
 }
 
 footer p {
-  font-family: 'Benton Sans';
-  font-size: .8em;
+  font-family: "Benton Sans";
+  font-size: 0.8em;
   margin-bottom: 10px;
 }
 
 /********** LEGEND *********/
 
 #map-legend {
-  background-color:rgba(255, 255, 255, 0.7);;
-  position:absolute;
-  bottom:45px;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  bottom: 45px;
   right: 10px;
-  width:260px;
-  font-size:11px;
-  line-height:11px;
+  width: 260px;
+  font-size: 11px;
+  line-height: 11px;
   padding: 7px 7px 7px 7px;
   border: 2px solid #dfdfdf;
   border-radius: 5px 5px 5px 5px;
   font-family: "Benton Sans";
-  color:#303030;
-  text-align:center;
-  z-index:1;
+  color: #303030;
+  text-align: center;
+  z-index: 1;
 
   @media only screen and (max-width: 500px) {
-    width:100%;
-    position:static;
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
-    max-width:250px;
-    text-align:center;
-    margin-top:20px;
-    margin-bottom:20px;
+    width: 100%;
+    position: static;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 250px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
-
 }
 
 .legend-row {
-  height:14px;
-  margin-bottom:1px;
+  height: 14px;
+  margin-bottom: 1px;
 }
 
 .legend-row .bar {
-  width:48%;
-  height:10px;
-  float:left;
+  width: 48%;
+  height: 10px;
+  float: left;
 }
 
 .legend-row .label {
-  width:50%;
-  float:right;
-  text-align:left;
-  font-weight:normal;
-  line-height:12px;
-
+  width: 50%;
+  float: right;
+  text-align: left;
+  font-weight: normal;
+  line-height: 12px;
 }
 
 .legend-header {
-  margin-bottom:10px;
+  margin-bottom: 10px;
 
   .header {
-    font-weight:bold;
+    font-weight: bold;
   }
 }
 
 .legend-footer {
-  display:inline-block;
-  width:100%;
-  margin-top:5px;
+  display: inline-block;
+  width: 100%;
+  margin-top: 5px;
 
   .label {
-    font-weight:normal;
-    line-height:12px;
+    font-weight: normal;
+    line-height: 12px;
+
+    // .label-detail {
+    //   float: left;
+    // }
   }
 }
 
 .footer-left {
-  width:48%;
-  float:left;
-  text-align:center;
+  width: 48%;
+  float: left;
+  text-align: center;
 }
 
 .footer-right {
-  width:48%;
-  float:right;
-  text-align:center;
+  width: 48%;
+  float: right;
+  text-align: center;
 }
 
 .square {
-  margin-left:auto;
-  margin-right:auto;
-  margin-bottom:5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
   height: 10px;
   width: 10px;
   background-color: #f4f4f2;
@@ -298,12 +303,19 @@ footer p {
 }
 
 .blue {
-  background-image: linear-gradient(to right, rgba(224,230,227,0.8), rgba(145,205,248,0.8));
+  background-image: linear-gradient(
+    to right,
+    rgba(224, 230, 227, 0.8),
+    rgba(145, 205, 248, 0.8)
+  );
 }
 
 .red {
-  background-image: linear-gradient(to right, rgba(248,145,132,0.8), rgba(251,55,189,0.8));
+  background-image: linear-gradient(
+    to right,
+    rgba(248, 145, 132, 0.8),
+    rgba(251, 55, 189, 0.8)
+  );
 }
 
 /********** IMAGES **********/
-
