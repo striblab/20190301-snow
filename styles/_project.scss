@@ -80,8 +80,28 @@ section {
     position: relative;
 
     .map {
-      height: 500px;
+      min-height: 250px;
+      max-height: 90vh;
       position: relative;
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+      #map-preview-mobile {
+        display: none;
+
+        @media only screen and (max-width: 500px) {
+          display: block;
+        }
+      }
+
+      @media only screen and (max-width: 500px) {
+        #map-preview {
+          display: none;
+        }
+      }
     }
 
     #map-credit {

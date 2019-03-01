@@ -9,18 +9,21 @@ import utilsFn from './utils.js';
 const utils = utilsFn({});
 const mobile_thresh = 500; // The width of the map when tooltips turn to popovers
 
-const isMobile = (window.innerWidth <= mobile_thresh || document.body.clientWidth) <= mobile_thresh || utils.isMobile();
-const adaptive_ratio = utils.isMobile() ? 0.49 : 0.49; // Height/width ratio for adaptive map sizing
+const isMobile =
+  (window.innerWidth <= mobile_thresh || document.body.clientWidth) <=
+    mobile_thresh || utils.isMobile();
+const adaptive_ratio = utils.isMobile() ? 5 / 4 : 3 / 4; // height / width ratio for adaptive map sizing
 
-mapboxgl.accessToken = 'pk.eyJ1IjoiY2pkZDNiIiwiYSI6ImNqZWJtZWVsYjBoYTAycm1raTltdnpvOWgifQ.aPWEg8C-5IJ0_7cXusY-1g';
+mapboxgl.accessToken =
+  'pk.eyJ1IjoiY2pkZDNiIiwiYSI6ImNqZWJtZWVsYjBoYTAycm1raTltdnpvOWgifQ.aPWEg8C-5IJ0_7cXusY-1g';
 
 /********** INITIALIZE MAP AND GEOCODER **********/
 
 // Set adaptive sizing
 let mapHeight = window.innerWidth * adaptive_ratio;
 
-console.log(mapHeight);
-document.getElementById("map").style.height = mapHeight.toString() + "px";
+//console.log(window.innerWidth, adaptive_ratio, mapHeight);
+document.getElementById('map').style.height = mapHeight.toString() + 'px';
 
 // Init map
 const map = new mapboxgl.Map({
@@ -33,11 +36,16 @@ const map = new mapboxgl.Map({
   scrollZoom: false
 });
 
+// Remove preview image
+map.on('load', () => {
+  document.getElementById('map-preview').style.display = 'none';
+  document.getElementById('map-preview-mobile').style.display = 'none';
+});
+
 /********** MAP BEHAVIORS **********/
 map.addControl(new mapboxgl.NavigationControl({ showCompass: false }));
 
 if (utils.isMobile()) {
   map.dragRotate.disable();
   map.touchZoomRotate.disableRotation();
-} else {
 }
